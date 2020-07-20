@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-parent {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: grey;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.flex-parent li {
+  padding: 15px;
+  background: cyan;
+  padding: 30px 100px;
+  margin: 5px;
+  flex-grow: 2;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}

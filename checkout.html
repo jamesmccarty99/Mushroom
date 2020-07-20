@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mushrooms</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="main-header clearfix">
+        <div class="container">
+        <h1 class="title">Mushrooms</h1>
+        <img src="logo.png" class="logo" alt="logo"></img>
+
+
+          <ul class="main-nav">
+
+            <li class="shopping-cart"><a class="shopping-cart-link" href="#"><img src="icons/supermarket.png"></a></li>
+
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div> <!--main-header -->
+        </header>
+
+      <div class="checkout-banner">
+
+      </div> <!-- banner -->
+
+
+    </div>  <!-- wrap -->
+
+    <div class="main-content container">
+
+      <div>
+        <ul class="item-details">
+          <li><h2>Your Order:</h2>
+            <div class="order-box clearfix">
+            <a href="enoki.html"><img class="checkout-img" src="photos/shopping/2.jpg"></a>
+            <div class="checkout-details clearfix">
+                <h2>Enoki Mushroom</h2>
+                <p class="checkout-price">$30.95</p>
+                <div class="rating-img-checkout clearfix"></div>
+                <div class="button-group">
+                    <p onclick="addValue()">+</p>
+                      <p class="quantity">1</p>
+                    <p onclick="subtractValue()">-</p>
+                </div>
+
+
+              </div>
+                </div>
+          </li>
+
+          <li id="checkoutBox">
+            <h2>Subtotal (2 Items)</h2>
+            <div class="checkout-box">
+
+              <h4>Est. taxes and fees.................................................................0.00</h4>
+              <h4>Est. excise tax...................................................................0.00</h4>
+              <h4>Est. sales tax...................................................................0.00</h4>
+                <h4>Service fee.....................................................0.00</h4>
+              </div>
+              <h3 id="totalCostElement">TOTAL: $33.89</h3>
+            <h5 onclick="popUpError()">Proceed to Checkout</h5>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+      <footer class="main-footer">
+        <span class="footer-text">&copy; Mushrooms.com</span>
+        <a href="#top">back to top</a>
+      </footer>
+        <script src="javaShop.js"></script>
+        <script src="javascript.js"></script>
+        <script src="inventory.js"></script>
+  </body>
+</html>

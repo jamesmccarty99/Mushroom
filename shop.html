@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mushrooms</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="main-header clearfix">
+        <div class="container">
+        <h1 class="title">Mushrooms</h1>
+        <img src="logo.png" class="logo" alt="logo"></img>
+
+
+          <ul class="main-nav">
+
+            <li class="shopping-cart"><a class="shopping-cart-link" href="checkout.html"><img src="icons/supermarket.png"></a></li>
+
+            <li><a id="current-page" href="#">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div> <!--main-header -->
+        </header>
+
+      <div class="shop-banner">
+          <!-- <img src="photos/Mushroom-Photo.jpeg" alt="Mushroom Photo" class="header-img"> -->
+                  <h1 class="cover-title cover-shopping-title"><em>Mushrooms</em></h1>
+                  <h2 class="sub-title">Where the magic happens.</h2>
+
+      </div> <!-- banner -->
+    </div>  <!-- wrap -->
+
+    <div class="main-content container">
+        <div class="top-strains clearfix">
+          <h2>Top Strains</h2>
+          <select id="most" name="most" onchange="selectOrder()">
+            <option value="most-expensive">Most Expensive</option>
+            <option value="least-expensive">Least Expensive</option>
+            <option value="best-sellers">Best Sellers</option>
+          </select>
+          <ul class="strain-img-container" id="shoppingItemsBox">
+          <li value="30.95" class="shopItems">
+          <a href="enoki.html"><img src="photos/shopping/2.jpg" alt="enoki mushrooms"></a>
+            <h4>Enoki Mushrooms</h4>
+            <p value="30.95">$30.95</p>
+            <h5>Add to cart</h5>
+          </li>
+
+          <li value="20.00" class="shopItems">
+            <a href="shitake.html"><img src="photos/shopping/3.jpg" alt="Shitake mushrooms"></a>
+            <h4>Shitake Mushrooms</h4>
+            <p value="20.00">$20.00</p>
+            <h5>Add to cart</h5>
+          </li>
+          <li value="15.99" class="shopItems">
+            <a href="babybella.html"><img src="photos/shopping/4.jpg" alt="Bella mushrooms"></a>
+            <h4>Bella Mushrooms</h4>
+            <p value="15.99">$15.99</p>
+            <h5>Add to cart</h5>
+          </li>
+
+          <li value="12.95" class="shopItems">
+            <a href="cortyceps.html"><img src="photos/shopping/5.jpg" alt="Cortyceps mushrooms"></a>
+            <h4>Cortyceps Mushrooms</h4>
+            <p value="12.95">$12.95</p>
+            <h5>Add to cart</h5>
+          </li>
+
+          <li value="58.00" class="shopItems">
+            <a href="portabello.html"><img src="photos/shopping/Portabello.jpg" alt="Portabello mushrooms"></a>
+            <h4>Portabello Mushrooms</h4>
+            <p value="58.00">$59.00</p>
+            <h5>Add to cart</h5>
+          </li>
+          <li value="1.99" class="shopItems">
+            <a href="oyster.html"><img src="photos/shopping/7.jpg" alt="Oyster mushrooms"></a>
+            <h4>Oyster Mushrooms</h4>
+            <p value="1.99">$1.99</p>
+            <h5>Add to cart</h5>
+          </li>
+        </ul>
+        </div>
+    </div>
+      <footer class="main-footer">
+        <span class="footer-text">&copy; Mushrooms.com</span>
+        <a href="#top">back to top</a>
+      </footer>
+        <script src="javaShop.js"></script>
+  </body>
+</html>

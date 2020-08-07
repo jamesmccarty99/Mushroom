@@ -919,6 +919,15 @@ padding: 30px;
 /* SHOP -------------------------------------------------------------- */
 
 .shop-banner {
+  background-image: url("photos/forest-fog.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 10em;
+  padding-bottom: 5em;
+  margin-bottom: 60px;
+  height: 830px;
+  position: relative;
   display: none;
 }
 
@@ -1019,6 +1028,7 @@ padding: 30px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     height: 200px;
+    display: none;
   }
 
   .item-details-header {
@@ -1038,8 +1048,8 @@ padding: 30px;
   .normal-font::after {
     content: "per 1/8oz (3.5g)";
     position: absolute;
-    right: 43%;
-    top: 13%;
+    right: 48%;
+    top: 65%;
     font-size: 12px;
     color: grey;
     font-weight: lighter;
@@ -1059,23 +1069,22 @@ padding: 30px;
 .rating-img::after {
   content: "(88 Reviews)";
   position: absolute;
-  right: 41.5%;
-  top: 17.6%;
+  right: 50%;
+  top: 69.2%;
   font-size: 12px;
 }
 
   .item-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 90%;
-    margin-top: 5px;
-    margin-right: 0;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
+    padding-top: 100px;
   }
 
   .item-details li {
     width: 70%;
-    margin: 5px;
+    margin: 5px auto;
   }
 
   .item-details img {
@@ -1344,7 +1353,7 @@ padding: 30px;
       position: absolute;
       right: 43%;
       top: 29.8%;
-      font-size: 12px;
+      font-size: 40px;
       color: grey;
       font-weight: lighter;
       font-style: italic;
@@ -1509,7 +1518,6 @@ padding: 30px;
         background-position: center;
         background-size: cover;
         text-align: center;
-        /* margin-top: 10em; */
         padding-top: 10em;
         padding-bottom: 5em;
         margin-bottom: 60px;
@@ -1613,6 +1621,51 @@ padding: 30px;
         width: 400px;
         height: 400px;
         max-width: 100%;
+      }
+
+      .shop-items-banner {
+        background-image: url("photos/forest-fog.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        height: 200px;
+          display: inherit;
+      }
+
+      .item-details {
+        flex-direction: row;
+        max-width: 90%;
+        margin-top: 5px;
+        margin-right: 0;
+        margin-bottom: 70px;
+            padding-top: 0;
+      }
+
+      .item-details li {
+        width: 70%;
+        margin: 5px;
+      }
+
+      .normal-font::after {
+        content: "per 1/8oz (3.5g)";
+        position: absolute;
+        right: 30%;
+        top: 13%;
+        font-size: 12px;
+        color: grey;
+        font-weight: lighter;
+        font-style: italic;
+      }
+
+      .rating-img::after {
+        content: "(88 Reviews)";
+        position: absolute;
+        right: 41.5%;
+        top: 17.6%;
+        font-size: 12px;
       }
 
       .main-footer {

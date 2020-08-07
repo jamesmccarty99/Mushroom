@@ -7,7 +7,25 @@
 
   </head>
   <body>
+
+    <div class="mobile-pop-up">
+      <ul>
+        <li><h3 class="x-button" onclick="mobileDropdown()">Back<h3></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+
     <div class="wrap">
+
+      <div class="mobile-header">
+        <!-- <div class="dropdown-button" onclick="mobileDropdown"> -->
+        <!-- </div> -->
+        <img src="icons/dropdown.png" onclick="mobileDropdown()">
+
+      </div>
+
       <header class="main-header clearfix">
         <div class="container">
         <a href="index.html"><h1 class="title">Mushrooms</h1></a>
@@ -16,7 +34,11 @@
 
           <ul class="main-nav">
 
-            <li class="shopping-cart"><a class="shopping-cart-link" href="checkout.html"><img src="icons/supermarket.png"></a></li>
+            <li class="shopping-cart">
+              <a class="shopping-cart-link" href="checkout.html">
+                <img src="icons/supermarket.png"></a>
+                <img class="shopping-cart-num" src="icons/one.png" alt="">
+              </li>
 
             <li><a id="current-page" href="#">Shop</a></li>
             <li><a href="about.html">About</a></li>
@@ -31,7 +53,7 @@
                   <h2 class="sub-title">Where the magic happens.</h2>
 
       </div> <!-- banner -->
-    </div>  <!-- wrap -->
+
 
     <div class="main-content container">
         <div class="top-strains clearfix">
@@ -85,9 +107,11 @@
         </div>
     </div>
       <footer class="main-footer">
-        <span class="footer-text">&copy; Mushrooms.com</span>
-        <a href="#top">back to top</a>
+        <span class="footer-text">This is a portfolio website - the purpose of this website is to represent my design skills for future employers.</span>
+              <span class="footer-text">jamesmccarty126@gmail.com</span>
       </footer>
-        <script src="javaShop.js"></script>
+          </div>  <!-- wrap -->
+        <!-- <script src="javaShop.js"></script> -->
+        <script src="javascript.js"></script>
   </body>
 </html>

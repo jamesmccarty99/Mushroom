@@ -7,7 +7,25 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
+
+    <div class="mobile-pop-up">
+      <ul>
+        <li><h3 class="x-button" onclick="mobileDropdown()">Back<h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">Learn</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+
     <div class="wrap">
+
+      <div class="mobile-header">
+        <!-- <div class="dropdown-button" onclick="mobileDropdown"> -->
+        <!-- </div> -->
+        <img src="icons/dropdown.png" onclick="mobileDropdown()">
+
+      </div>
+
       <header class="main-header clearfix">
         <div class="container">
         <a href="#"><h1 class="title">Mushrooms</h1></a>
@@ -17,7 +35,9 @@
           <ul class="main-nav">
 
             <li class="shopping-cart">
-              <a class="shopping-cart-link" href="checkout.html"><img src="icons/supermarket.png"></a>
+              <a class="shopping-cart-link" href="checkout.html">
+                <img src="icons/supermarket.png">
+              </a>
               <img class="shopping-cart-num" src="icons/one.png" alt="">
             </li>
 
@@ -75,8 +95,8 @@
            </div>
 
           <div class="quote-container">
-            <h4>Tommy Brown, CEO Mushroom Net</h4>
-              <h3>“Chaos is what we've lost touch with. This is why it is given a bad name. It is feared by the dominant archetype of our world, which is Ego, which clenches because its existence is defined in terms of control.”</h3>
+            <h4>Paul Stamets</h4>
+              <h3>“We need to have a paradigm shift in our consciousness. If we don't get our act together and come in commonality and understanding with the organisms that sustain us today, not only will we destroy those organisms, but we will destroy ourselves.”</h3>
           </div>
 
 
@@ -91,11 +111,12 @@
             </div>
 
    </div> <!-- main-content -->
-    </div>  <!-- wrap -->
+
       <footer class="main-footer">
-        <span class="footer-text">&copy; Mushrooms.com</span>
-        <a href="#top">back to top</a>
+        <span class="footer-text">This is a portfolio website-- the purpose of this website is to represent my design skills for future employers.</span>
+        <span class="footer-text">jamesmccarty126@gmail.com</span>
       </footer>
+          </div>  <!-- wrap -->
       <script src="javascript.js"></script>
   </body>
 </html>

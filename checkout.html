@@ -16,7 +16,8 @@
 
           <ul class="main-nav">
 
-            <li class="shopping-cart"><a class="shopping-cart-link" href="#"><img src="icons/supermarket.png"></a></li>
+            <li class="shopping-cart"><a class="shopping-cart-link" href="#"><img src="icons/supermarket.png"></a>
+                    <img class="shopping-cart-num" src="icons/one.png" alt=""></li>
 
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
@@ -33,26 +34,45 @@
 
     </div>  <!-- wrap -->
 
-    <div class="main-content container">
+    <!-- <div class="main-content container">
 
       <div>
         <ul class="item-details">
           <li><h2>Your Order:</h2>
-            <div class="order-box clearfix">
+            <div class="order-box clearfix checkout-enoki">
             <a href="enoki.html"><img class="checkout-img" src="photos/shopping/2.jpg"></a>
             <div class="checkout-details clearfix">
                 <h2>Enoki Mushroom</h2>
                 <p class="checkout-price">$30.95</p>
                 <div class="rating-img-checkout clearfix"></div>
-                <div class="button-group">
-                    <p onclick="addValue()">+</p>
-                      <p class="quantity">1</p>
-                    <p onclick="subtractValue()">-</p>
+                <div class="button-group enoki-parent">
+                    <p class="unselectable" onclick="addEnokiNum()">+</p>
+                      <p class="quantity" id="enokiQuantity">1</p>
+                    <p class="unselectable" onclick="removeEnokiNum()">-</p>
                 </div>
 
 
               </div>
+
                 </div>
+
+                <div class="order-box clearfix checkout-shitake">
+                <a href="shitake.html"><img class="checkout-img" src="photos/shopping/3.jpg"></a>
+                <div class="checkout-details clearfix">
+                    <h2>Shitake Mushroom</h2>
+                    <p class="checkout-price">$200</p>
+                    <div class="rating-img-checkout clearfix"></div>
+                    <div class="button-group shitake-parent">
+                        <p class="unselectable" onclick="addShitakeNum()" id="shitakeButton">+</p>
+                          <p class="quantity" id="shitakeQuantity">1</p>
+                        <p class="unselectable" onclick="removeShitakeNum()">-</p>
+                    </div>
+
+
+                  </div>
+
+                    </div>
+                      <button type="button" onclick="removeItems(0, 1)" class="remove">Remove</button>
           </li>
 
           <li id="checkoutBox">
@@ -72,12 +92,17 @@
       </div>
 
     </div>
+  -->
+
+      <div class="coming-soon-container">
+          <h2>This page will be coming soon!</h2>
+          <img src="icons/hammer.png" alt="">
+          <h3>This site is being updated regularly, so come back at a later time to see what this page has to offer! Thank you!</h3>
+      </div>
       <footer class="main-footer">
-        <span class="footer-text">&copy; Mushrooms.com</span>
-        <a href="#top">back to top</a>
+      <span class="footer-text">This is a portfolio website-- the purpose of this website is to represent my design skills for future employers.</span>
+      <span class="footer-text">jamesmccarty126@gmail.com</span>
       </footer>
-        <script src="javaShop.js"></script>
         <script src="javascript.js"></script>
-        <script src="inventory.js"></script>
   </body>
 </html>

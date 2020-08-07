@@ -239,7 +239,7 @@ p {
 }
 
 .scroll-box li {
-  /* width: 300px;  */
+  width: 90%;
   margin: 2px auto;
 }
 
@@ -450,7 +450,7 @@ p {
   text-align: center;
   font-size: 5em;
   color: white;
-  margin-top: 3.2em;
+  margin-top: 2.8em;
 }
 
 
@@ -919,18 +919,13 @@ padding: 30px;
 /* SHOP -------------------------------------------------------------- */
 
 .shop-banner {
-  background-image: url("photos/forest-fog.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 60px;
-  height: 500px;
+  display: none;
 }
 
 .top-strains h2 {
   border-bottom: 2px solid black;
+  padding-top: 75px;
+  margin: 0;
 }
 
 .top-strains select {
@@ -960,6 +955,7 @@ padding: 30px;
   margin-bottom: 100px;
   flex-wrap: wrap;
   margin-top: 80px;
+  text-align: center;
 }
 
 .strain-img-container li {
@@ -969,7 +965,7 @@ padding: 30px;
   .strain-img-container img {
     /* width: 400px; */
     /* height: 400px; */
-    max-width: 100%;
+    max-width: 90%;
     object-fit: contain;
     margin: 0 5px;
   }
@@ -1590,6 +1586,27 @@ padding: 30px;
       .mind-head-top p,
       .mind-description-container {
         max-width: 50%;
+      }
+
+      .top-strains h2 {
+        padding-top: 0px;
+        margin: 5px;
+      }
+
+      .shop-banner {
+        display: block;
+        background-image: url("photos/forest-fog.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 60px;
+        height: 500px;
+      }
+
+      .strain-img-container {
+          text-align: inherit;
       }
 
       .strain-img-container img {

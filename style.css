@@ -239,7 +239,7 @@ p {
 }
 
 .scroll-box li {
-  width: 300px;
+  /* width: 300px;  */
   margin: 2px auto;
 }
 
@@ -334,25 +334,27 @@ p {
 .learn-flex {
   display: flex;
   max-width: 100%;
-  flex-direction: row-reverse;
+  flex-direction: column;
   margin: 0 auto;
   justify-content: space-around;
-
+  margin-bottom: 30px;
 }
 
 .learn-flex li {
-  margin: 30px;
+  margin: 10px;
+  text-align: center;
 }
 
 .learn-flex li:nth-child(2) {
-  max-width: 30%;
+  max-width: 60%;
   text-align: center;
   align-self: center;
 }
 
 .learn-flex li:nth-child(2) h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 0;
+  text-align: center;
 }
 
 .learn-flex li:nth-child(2) h3 {
@@ -369,6 +371,7 @@ p {
     padding: 8px 5px;
     width: 100%;
     margin: 0 auto;
+    /* margin-bottom: 30px; */
     /* border-radius: 5px; */
 }
 
@@ -379,14 +382,16 @@ p {
 
 
 .learn-flex img {
-  max-width: 80%;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
 
 
 .main-footer {
-  padding: 50px;
+  padding: 10px;
   background-image: url("photos/forest-fog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,6 +414,7 @@ p {
   font-style: italic;
   font-weight: lighter;
   text-align: center;
+  font-size: 10px;
 }
 
 
@@ -449,7 +455,7 @@ p {
 
 
 .about-intro {
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -481,7 +487,7 @@ p {
         color: #0E6655;
         opacity: 0.7;
         border-bottom: 1px solid grey;
-        width: 80%;
+        width: 100%;
         margin: 100px auto 0;
 }
 
@@ -532,13 +538,13 @@ p {
 
 
 #aboutContainer {
-  max-width: 95%;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  max-width: 80%;
+  text-align: center;
+  margin: 50px auto 100px;
 }
 
 #aboutContainer li {
-margin: 10px;
+margin: 10px auto;
 padding: 30px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
       border: 1px solid transparent;
@@ -553,6 +559,11 @@ padding: 30px;
     font-weight: bold;
     margin-bottom: 0;
     font-size: 17px;
+}
+
+.mushroom-container {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .about-main {
@@ -956,8 +967,9 @@ padding: 30px;
 }
 
   .strain-img-container img {
-    width: 400px;
-    height: 400px;
+    /* width: 400px; */
+    /* height: 400px; */
+    max-width: 100%;
     object-fit: contain;
     margin: 0 5px;
   }
@@ -1460,6 +1472,41 @@ padding: 30px;
         border-bottom: solid 1px #0D473C;
       }
 
+      .learn-flex li:nth-child(2) h3 {
+        font-weight: 200;
+        font-style: italic;
+        color: grey;
+          font-size: 17px;
+      }
+
+      .learn-flex {
+        max-width: 80%;
+        flex-direction: row-reverse;
+        margin-bottom: 0;
+      }
+
+      .learn-flex li {
+        margin: 30px;
+      }
+
+
+      .learn-flex li:nth-child(2) {
+        max-width: 30%;
+      }
+
+      .learn-flex li:nth-child(2) p {
+        width: 30%;
+        border-bottom: 2px solid black;
+      }
+
+      .learn-flex li:nth-child(2) h2 {
+        font-size: 40px;
+      }
+
+            .learn-flex img {
+              max-width: 80%;
+            }
+
       .about-banner {
         /* background-image: url("photos/leaves.jpg"); */
         background-image: url("photos/forest-fog.jpg");
@@ -1481,6 +1528,10 @@ padding: 30px;
         color: white;
       }
 
+      #aboutContainer {
+        max-width: 95%;
+      }
+
       .scroll-box li {
         width: 400px;
       }
@@ -1498,22 +1549,6 @@ padding: 30px;
         font-size: 35px;
       }
 
-      .learn-flex li:nth-child(2) h3 {
-        font-weight: 200;
-        font-style: italic;
-        color: grey;
-          font-size: 17px;
-      }
-
-      .learn-flex {
-        max-width: 80%;
-      }
-
-      .learn-flex li:nth-child(2) p {
-        width: 30%;
-        border-bottom: 2px solid black;
-      }
-
       .about-intro h4 {
         font-size: 30px;
         width: 60%;
@@ -1528,6 +1563,11 @@ padding: 30px;
         font-size: 5em;
         color: white;
         margin-top: 0.42em;
+      }
+
+
+      .about-intro {
+        max-width: 80%;
       }
 
       .about-intro p {
@@ -1551,4 +1591,18 @@ padding: 30px;
       .mind-description-container {
         max-width: 50%;
       }
+
+      .strain-img-container img {
+        width: 400px;
+        height: 400px;
+        max-width: 100%;
+      }
+
+      .main-footer {
+        padding: 50px;
+      }
+
+      .footer-text {
+      font-size: 15px;
+    }
     }
